@@ -1,0 +1,48 @@
+<div class="form-group text-center">
+  <p class="text-danger" id="no-video"></p>
+
+  <div id="errors" class="mt-1">
+
+  </div>
+
+  <h2 class="my-3">آپلود ویدیو جدید</h2>
+  <form>
+    <p class="text-muted">ویدیو</p>
+    <div class="input-group my-3 text-left">
+      <div class="custom-file">
+        <input type="file" accept=".mp4" id="video" class="custom-file-input" />
+        <label for="thumbnail" class="custom-file-label">
+          انتخاب ویدیو
+        </label>
+      </div>
+    </div>
+    <p class="text-danger">فرمت ویدیو باید mp4 باشد!</p>
+    <label class="text-muted" for="title">عنوان ویدیو</label>
+    <input type="text" name="title" id="title" class="form-control mb-2" placeholder="عنوان ویدیو" />
+    <p class="text-muted">عکس بندانگشتی</p>
+    <div class="input-group my-3 text-left">
+      <div class="custom-file">
+        <input type="file" id="thumbnail" class="custom-file-input" />
+        <label for="selectedImage" class="custom-file-label" id="imageStatus">
+          انتخاب عکس بندانگشتی
+        </label>
+      </div>
+    </div>
+    <div id="progressDiv" style="display: none">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="bg-light w-100">
+      <p class="text-muted" id="uploadResult"></p>
+    </div>
+    <div class="w-100">
+      <label>توضیحات ویدیو</label>
+      <textarea class="form-control" id="videoDesc"></textarea>
+    </div>
+    <br />
+    <button id="submit-btn" class="btn btn-success">بارگذاری</button>
+  </form>
+  <div class="div-success" id="successDiv"></div>
+</div>
