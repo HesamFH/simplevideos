@@ -8,6 +8,7 @@ const submitBtn = document.getElementById("submit-btn"),
   videoDesc = document.getElementById("videoDesc"),
   successDiv = document.getElementById("successDiv");
 
+//! Uploads the video to the server
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -58,6 +59,7 @@ submitBtn.addEventListener("click", (e) => {
   }
 });
 
+//! If there is an error while uploading the video, this function renders the error
 function showErrors(errors) {
   errors.forEach((err) => {
     const conDiv = document.createElement("div");

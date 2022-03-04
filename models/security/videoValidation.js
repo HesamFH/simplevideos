@@ -1,5 +1,7 @@
 const yup = require("yup");
 
+//! Video validation schema
+
 exports.videoValidationSchema = yup.object().shape({
   title: yup
     .string()

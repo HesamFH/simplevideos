@@ -1,5 +1,7 @@
 const yup = require("yup");
 
+//! User validation schema
+
 exports.userValidationSchema = yup.object().shape({
   username: yup
     .string()

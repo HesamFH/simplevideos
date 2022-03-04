@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const { userValidationSchema } = require("./security/userValidator");
 
+//! Defining the user model schema
 const schema = mongoose.Schema({
   username: {
     type: String,
@@ -24,10 +25,12 @@ const schema = mongoose.Schema({
   },
 });
 
+//! This method validates user register inputs
 schema.statics.validateUser = function (user) {
   return userValidationSchema.validate(user, { abortEarly: false });
 };
 
+//! Hashes the user's password
 schema.pre("save", function (next) {
   let user = this;
 

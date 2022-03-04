@@ -1,3 +1,5 @@
+//! This whole file handles the user logins
+
 const passport = require("passport");
 const { Strategy } = require("passport-local");
 const bcrypt = require("bcrypt");

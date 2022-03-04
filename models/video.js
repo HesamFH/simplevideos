@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { videoValidationSchema } = require("./security/videoValidation");
 
+//! Defining of video model schema
 const schema = mongoose.Schema({
   videoTitle: {
     type: String,
@@ -35,10 +36,12 @@ const schema = mongoose.Schema({
   },
 });
 
+//! This method validates video upload inputs
 schema.statics.validateVideo = function (body) {
   return videoValidationSchema.validate(body, { abortEarly: false });
 };
 
+//! Indexes video title for search
 schema.index({ videoTitle: "text" });
 
 module.exports = mongoose.model("Video", schema);

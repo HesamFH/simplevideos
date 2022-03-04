@@ -1,3 +1,4 @@
+//! Truncates a string (text)
 exports.truncateString = (str, num) => {
   // If the length of str is less than or equal to num
   // just return str--don't truncate it.

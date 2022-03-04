@@ -88,6 +88,7 @@ exports.uploadVideo = async (req, res) => {
     const videoName = Date.now() + uploadedVideo.name;
     const thumbName = Date.now() + thumbnail.name;
 
+    //? Moves the video to the videos directory
     uploadedVideo.mv(
       `${__dirname}/../public/uploads/videos/${videoName}`,
       (err) => {
@@ -95,6 +96,7 @@ exports.uploadVideo = async (req, res) => {
       }
     );
 
+    //? Moves the thumbnail to the thumbnails directory
     thumbnail.mv(
       `${__dirname}/../public/uploads/images/${thumbName}`,
       (err) => {
