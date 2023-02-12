@@ -1,2 +1,2 @@
-# https://simplevideos.ir
-a Simple Video Site With Node &amp; Express
+# Simple Videos
+a Simple Video Streaming Website Written JavaScript using Node &amp; Express.
