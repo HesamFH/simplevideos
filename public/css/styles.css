@@ -1,0 +1,49 @@
+body {
+  font-family: Shabnam !important;
+}
+
+img {
+  max-height: 185px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mw-200 {
+  max-width: 200px;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "انتخاب تصویر" !important;
+}
+
+.custom-file-input#video ~ .custom-file-label::after {
+  content: "انتخاب ویدیو" !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.div-success {
+  background-color: rgba(0, 235, 25, 0.5);
+  color: #000;
+  display: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+@media (min-height: 700px) and (min-width: 770px) {
+  .f-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 60;
+  }
+}

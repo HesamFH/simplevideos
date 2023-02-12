@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/shabnam.css">
+  <% if (path==="/login" || path==="/register" ) { %>
+  <link rel="stylesheet" href="/css/signin.css">
+  <% } %>
+  <% if (path==="/error") { %>
+  <link rel="stylesheet" href="/css/errorPages.css">
+  <% } %>
+  <link rel="stylesheet" href="/css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/videojs.css">
+  <title><%= title %></title>
+</head>
+
+<body class="rtl">
+  <% if (path != "/login" && path != "/register") { %>
+  <%- include("../shared/mainNav.ejs") %>
+  <% } %>
+  <div class="container">
+    <%- body %>
+  </div>
+  <% if (path != "/login" && path != "/register") { %>
+  <%- include("../shared/footer.ejs") %>
+  <% } %>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/searchVideo.js"></script>
+  <% if(path == "/video") { %>
+  <script src="/js/videojs.js"></script>
+  <script>
+    videojs("video-player");
+  </script>
+  <% } %>
+</body>
+
+</html>

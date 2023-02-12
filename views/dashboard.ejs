@@ -1,0 +1,19 @@
+<div class="container mt-2">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <h3>ویدیوهای شما</h3>
+    </div>
+  </div>
+  <% if (videos.length < 1) { %>
+  <div class="d-flex justify-content-center">
+    <p class="text-center">شما ویدیویی ندارید 😔</p>
+  </div>
+  <% } else { %>
+  <div class="row d-flex align-items-stretch">
+    <%- include("./shared/videoCard.ejs") %>
+  </div>
+  <div class="mt-2">
+    <%- include('./shared/pagination.ejs') %>
+  </div>
+  <% } %>
+</div>

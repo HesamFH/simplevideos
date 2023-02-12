@@ -1,0 +1,23 @@
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+      <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center mb-2 mb-lg-0">
+        <li><a href="/" class="btn btn-sm btn-outline-secondary">رفتن به صفحه اصلی</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 form-inline flex-nowrap" id="search-form">
+        <input type="search" class="form-control form-control-dark w-100" placeholder="جستجو" aria-label="Search">
+        <button class="btn btn-secondary ml-1">بگرد</button>
+      </form>
+
+      <div>
+        <% if (auth) { %>
+        <a href="/dashboard" class="btn btn-sm btn-outline-primary">رفتن به داشبورد</a>
+        <% } else { %>
+        <a href="/login" class="btn btn-sm btn-outline-primary">ورود</a>
+        <a href="/register" class="btn btn-sm btn-outline-danger">ثبت نام</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,15 @@
+<% videos.forEach(video => { %>
+<div class="d-flex border w-100 mt-3 radius-10">
+  <img src="<%= video.thumbnail %>" alt="Video Thumbnail" class="mw-200 img-thumbnail" />
+  <div class="d-flex flex-column justify-content-around mx-2">
+    <p title="<%= video.videoTitle %>">
+      <strong>
+        <a href="/video/<%= video._id %>">
+          <%= truncateString(video.videoTitle, 30) %>
+        </a>
+      </strong>
+    </p>
+    <p class="badge badge-success my-1"><%= video.views %> بازدید</p>
+  </div>
+</div>
+<% }) %>

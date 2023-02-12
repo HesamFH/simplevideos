@@ -1,0 +1,19 @@
+<main class="form-signin">
+  <form method="post" action="/users/register">
+    <h1 class="h3 mb-3 fw-normal">ثبت نام</h1>
+    <%- include("./shared/errors.ejs") %>
+    <div class="form-floating">
+      <input first-input="true" type="text" class="form-control" name="username" required id="floatingInput" placeholder="نام کاربری">
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control" name="email" id="floatingInput" required placeholder="ایمیل">
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" name="password" required placeholder="کلمه عبور">
+    </div>
+    <div class="form-floating mb-3">
+      <input last-input="true" type="password" class="form-control" name="confirmPassword" required placeholder="تکرار کلمه عبور">
+    </div>
+    <button class="w-100 btn btn-lg btn-success" type="submit">ثبت نام</button>
+  </form>
+</main>

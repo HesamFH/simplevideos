@@ -1,0 +1,34 @@
+{
+  "name": "kharazmi-project",
+  "version": "1.0.0",
+  "description": "A project for kharazmi event",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Amir Hesam Fatehi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^5.1.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.2",
+    "jalali-moment": "^3.3.11",
+    "mongoose": "^6.1.4",
+    "mysql2": "^2.3.3",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.19.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

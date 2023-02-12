@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/shabnam.css">
+  <link rel="stylesheet" href="/css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title><%= title %></title>
+</head>
+
+<body class="rtl">
+  <%- include("../shared/layoutNav.ejs") %>
+  <div class="container">
+    <%- body %>
+  </div>
+  <% if (path != "/login" && path != "/register") { %>
+  <%- include("../shared/footer.ejs") %>
+  <% } %>
+  <% if (path === "/dashboard/upload") { %>
+  <script src="/js/uploadVideo.js"></script>
+  <% } %>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/searchVideo.js"></script>
+</body>
+
+</html>

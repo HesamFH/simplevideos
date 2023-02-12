@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+/config/config.env
+public/uploads/images/*
+public/uploads/videos/*
+public/css/bootstrap-rtl.min.css
+public/css/videojs.css
+public/js/bootstrap.min.js
+public/js/jquery.min.js
+public/js/videojs.js

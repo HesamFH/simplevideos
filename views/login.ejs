@@ -1,0 +1,18 @@
+<main class="form-signin">
+  <form action="/users/login" method="post">
+    <h1 class="h3 mb-3 fw-normal">ورود</h1>
+    <% if (error.length > 0) { %>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <p><%= error %></p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+    <div class="form-floating">
+      <input first-input="true" name="email" required type="email" class="form-control" id="floatingInput" placeholder="ایمیل">
+    </div>
+    <div class="form-floating mb-3">
+      <input last-input="true" type="password" required name="password" class="form-control" id="floatingPassword" placeholder="کلمه عبور">
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">ورود</button>
+  </form>
+</main>
